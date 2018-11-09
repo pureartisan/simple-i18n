@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "Simple i18n library",
   "license": "Apache License",
+  "keywords": [ "i18n", "l10n", "internationalisation", "localisation" ],
+  "author": {
+    "name" : "Prageeth Silva",
+    "email" : "contact@prageethsilva.com"
+  },
   "main": "dist/main.js",
   "scripts": {
     "build": "babel src --out-dir ./dist --source-maps",
