@@ -2,7 +2,7 @@
   "name": "@prageeths/simple-i18n",
   "version": "1.0.1",
   "description": "Simple i18n library",
-  "license": "Apache License",
+  "license": "Apache-2.0",
   "keywords": [
     "i18n",
     "l10n",
@@ -24,18 +24,18 @@
     "url": "git@github.com:prageeth/simple-i18n.git"
   },
   "dependencies": {
-    "escape-string-regexp": "^1.0.5"
+    "escape-string-regexp": "latest"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/register": "^7.0.0",
-    "chai": "^4.1.2",
-    "mocha": "^4.0.1",
-    "sinon": "^6.3.4",
-    "sinon-chai": "^3.2.0"
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/plugin-proposal-object-rest-spread": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/register": "latest",
+    "chai": "latest",
+    "mocha": "latest",
+    "sinon": "latest",
+    "sinon-chai": "latest"
   }
 }
