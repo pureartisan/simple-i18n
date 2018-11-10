@@ -1,3 +1,3 @@
-import { SimpleI18n } from './simple-i18n';
+import { SimpleI18nSingleton } from './simple-i18n';
 
-export default SimpleI18n;
+export default SimpleI18nSingleton;
