@@ -4,16 +4,16 @@ Simple and light weight i18n library.
 
 ## Installation
 ```
-npm install @prageeth/simple-i18n
+npm install @prageeths/simple-i18n
 ```
 
 ## Getting started
 ```
 // ES5
-var i18n = require('@prageeth/simple-i18n');
+var i18n = require('@prageeths/simple-i18n');
 
 // ES6
-import i18n from '@prageeth/simple-i18n';
+import i18n from '@prageeths/simple-i18n';
 
 // initialise once at the start
 // NOTE: normally you'd want to define the languages and rules on separate files and import them here.
