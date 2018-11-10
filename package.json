@@ -1,12 +1,17 @@
 {
   "name": "@prageeths/simple-i18n",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple i18n library",
   "license": "Apache License",
-  "keywords": [ "i18n", "l10n", "internationalisation", "localisation" ],
+  "keywords": [
+    "i18n",
+    "l10n",
+    "internationalisation",
+    "localisation"
+  ],
   "author": {
-    "name" : "Prageeth Silva",
-    "email" : "contact@prageethsilva.com"
+    "name": "Prageeth Silva",
+    "email": "contact@prageethsilva.com"
   },
   "main": "dist/main.js",
   "scripts": {
