@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:prageethsilva/simple-i18n.git"
+    "url": "git@github.com:prageeth/simple-i18n.git"
   },
   "dependencies": {
     "escape-string-regexp": "^1.0.5"
