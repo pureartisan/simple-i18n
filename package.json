@@ -1,5 +1,5 @@
 {
-  "name": "@prageethsilva/simple-i18n",
+  "name": "@prageeth/simple-i18n",
   "version": "0.0.1",
   "description": "Simple i18n library",
   "license": "Apache License",
@@ -10,7 +10,7 @@
   },
   "main": "dist/main.js",
   "scripts": {
-    "build": "babel src --out-dir ./dist --source-maps",
+    "build": "babel src --out-dir ./dist --source-maps --ignore ./test",
     "test": "./node_modules/.bin/mocha --compilers js:@babel/register test/**/*test.js",
     "prepare": "npm run-script build"
   },
