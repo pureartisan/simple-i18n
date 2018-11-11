@@ -13,7 +13,7 @@
     "name": "Prageeth Silva",
     "email": "contact@prageethsilva.com"
   },
-  "main": "dist/main.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir ./dist --source-maps --ignore ./test",
     "test": "./node_modules/.bin/mocha --compilers js:@babel/register test/**/*test.js",
