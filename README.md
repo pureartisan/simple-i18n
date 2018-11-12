@@ -53,6 +53,22 @@ sample language file entry
 var translated2 = i18n.translate('home-page.greeting', { firstName: 'Bob' });
 ```
 
+### Easy syntax
+
+```
+// ES5
+var i18n = require('@prageeths/simple-i18n');
+var translate = i18n.translate;
+
+// ES6
+import { translate } from '@prageeths/simple-i18n';
+
+...
+
+translate('greeting');
+
+```
+
 ## Locales
 
 ```
