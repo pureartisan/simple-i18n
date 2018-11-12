@@ -7,6 +7,18 @@ Simple and light weight i18n library.
 npm install @prageeths/simple-i18n
 ```
 
+### HTML tags in your translations
+
+If you want to use HTML tags in your translations safely (without opening your application into XXS), you have to use a proper technic to parse the tags in the translation file.
+
+You can use one of the plugins for "Simple I18N" below. Depending on the framework being used:
+* React: plugin [`@prageeths/simple-i18n-react`](https://github.com/prageeth/simple-i18n-react)
+* Angular: plugin coming soon...
+* Vue: plugin coming soon...
+
+***NOTE***
+The above plugins are required ONLY if you want to use HTML tags in the translation files, otherwise you can simple use this module without your React/Angular/Vue projects.
+
 ## Getting started
 ```
 // ES5
