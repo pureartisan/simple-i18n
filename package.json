@@ -16,7 +16,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir ./dist --source-maps --ignore ./test",
-    "test": "./node_modules/.bin/mocha --compilers js:@babel/register test/**/*test.js",
+    "test": "./node_modules/.bin/mocha -r @babel/register test/**/*test.js",
     "prepare": "npm run-script build"
   },
   "repository": {
