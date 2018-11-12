@@ -35,6 +35,7 @@
     "@babel/register": "latest",
     "chai": "latest",
     "mocha": "latest",
+    "moment": "latest",
     "sinon": "latest",
     "sinon-chai": "latest"
   }
