@@ -32,7 +32,6 @@ i18n.init({
     'custom': function() { ... }
   }
 });
-
 ```
 
 ## Translations
@@ -84,7 +83,6 @@ i18n.translate('greeting'); // returns 'Hallo'
 // change to 'fr' (not defined in languages)
 i18n.setLocale('fr'); // this will default to 'common' locale
 i18n.translate('greeting'); // returns 'Hi'
-
 ```
 
 ## Rules
@@ -143,15 +141,86 @@ var dogArgs = {
 
 i18n.translate('animal-count-statement', catArgs); // returns 'I have 5 cats'
 i18n.translate('animal-count-statement', dogArgs); // returns 'I have 1 dog'
+```
 
+## Locale dependant rules
+
+We may sometimes need rules dependent on locale, such as different date formats
+
+```
+import moment from 'moment';
+
+...
+
+var languageDefinitions = {
+  'common': {
+    'greeting.today': 'Hi, today is {today,date}' // 'today' is the variable name, 'date' is the rule name
+  },
+  'en': {
+    'date-format': 'DD-MM-YYYY'
+  },
+  'de': {
+    'date-format': 'DD.MM.YYYY'
+  }
+};
+
+var rules = {
+  'date': function(value, name) {
+     var dateFormat = i18n.raw('date-format'); // this will be resolved using the current locale
+     return moment(value).format(dateFormat);
+   }
+}
+
+i18n.init({
+  languages: languageDefinitions,
+  locale: 'en',
+  rules: rules
+});
+
+...
+
+// current locale is 'en'
+i18n.translate('greeting.today', { today: new Date() }); // returns 'Hi, today is 12-11-2018'
+
+// change to 'de'
+i18n.setLocale('de');
+i18n.translate('greeting.today'); // returns 'Hi, today is 12.11.2018'
 ```
 
 ## Helpers
+
+### i18n.setLocale(locale)
+
+You can override the locale using `setLocal()` method.
+
+```
+// locale; e.g. 'en', 'en-uk', 'de', 'fr'
+function onUserChooseLanguage(locale) {
+   i18n.setLocale(lanugage);
+}
+```
+
+### i18n.raw(i18nKey)
+
+You can access the raw/unprocessed i18n translation, that will return a raw string (variables will not be replaced).
+
+```
+var languageDefinitions = {
+  'common': {
+    'greeting.today': 'Hi, today is {today,date}'
+  }
+}
+
+...
+
+i18n.raw(i18nKey); // returns 'Hi, today is {today,date}'
+```
+
+### i18n.process(i18nKey, i18nOptions)
 
 You can also use the manual rules processor (regardless of the current locale).
 ```
 // taken from the above example of rules, you can directly call the 'process()' method
 i18n.process('I have {count,number} {animal,singular-plural}', catArgs); // returns 'I have 5 cats'
 i18n.process('She has {count,number} {animal,singular-plural}', dogArgs); // returns 'She has 1 dog'
-
 ```
