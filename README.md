@@ -11,7 +11,7 @@ npm install @prageeths/simple-i18n
 
 If you want to use HTML tags in your translations safely (without opening your application into XSS), you have to use a proper technic to parse the tags in the translation file.
 
-You can use one of the plugins for "Simple I18N" below. Depending on the framework being used:
+You can use one of the plugins for "Simple I18n" below. Depending on the framework being used:
 * React: plugin [`@prageeths/simple-i18n-react`](https://github.com/prageeth/simple-i18n-react)
 * Angular: plugin coming soon...
 * Vue: plugin coming soon...
