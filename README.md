@@ -1,4 +1,4 @@
-# Simple I18n  [![CircleCI](https://circleci.com/gh/prageeth/simple-i18n.svg?style=svg)](https://circleci.com/gh/prageeth/simple-i18n)
+# Simple I18n [![npm](https://img.shields.io/npm/v/@prageeths/simple-i18n/latest.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com)]() [![CircleCI](https://circleci.com/gh/prageeth/simple-i18n.svg?style=svg)](https://circleci.com/gh/prageeth/simple-i18n)
 
 Simple and light weight i18n library.
 
