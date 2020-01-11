@@ -4,7 +4,7 @@ Simple and light weight i18n library.
 
 ## Installation
 ```
-npm install @prageeths/simple-i18n
+npm install @pureartisan/simple-i18n
 ```
 
 ### HTML tags in your translations
@@ -12,7 +12,7 @@ npm install @prageeths/simple-i18n
 If you want to use HTML tags in your translations safely (without opening your application into XSS), you have to use a proper technic to parse the tags in the translation file.
 
 You can use one of the plugins for "Simple I18n" below. Depending on the framework being used:
-* React: plugin [`@prageeths/simple-i18n-react`](https://github.com/prageeth/simple-i18n-react)
+* React: plugin [`@pureartisan/simple-i18n-react`](https://github.com/prageeth/simple-i18n-react)
 * Angular: plugin coming soon...
 * Vue: plugin coming soon...
 
@@ -22,10 +22,10 @@ The above plugins are required ONLY if you want to use HTML tags in the translat
 ## Getting started
 ```
 // ES5
-var i18n = require('@prageeths/simple-i18n');
+var i18n = require('@pureartisan/simple-i18n');
 
 // ES6
-import i18n from '@prageeths/simple-i18n';
+import i18n from '@pureartisan/simple-i18n';
 
 // initialise once at the start
 // NOTE: normally you'd want to define the languages and rules on separate files and import them here.
@@ -69,11 +69,11 @@ var translated2 = i18n.translate('home-page.greeting', { firstName: 'Bob' });
 
 ```
 // ES5
-var i18n = require('@prageeths/simple-i18n');
+var i18n = require('@pureartisan/simple-i18n');
 var translate = i18n.translate;
 
 // ES6
-import { translate } from '@prageeths/simple-i18n';
+import { translate } from '@pureartisan/simple-i18n';
 
 ...
 
